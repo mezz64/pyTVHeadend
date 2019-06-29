@@ -1,0 +1,5 @@
+service_switch:
+  description: Change active service for a given stream index.
+  fields:
+    index: {description: Index of the stream., example: 1}
+    target: {description: Target service, optional., example: SERVICE_1}

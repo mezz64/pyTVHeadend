@@ -1,0 +1,8 @@
+{
+        "domain": "tvheadend",
+        "name": "TVHeadend Server",
+        "documentation": "",
+        "requirements": ["pytvheadend"],
+        "dependencies": [],
+        "codeowners": ["@mezz64"]
+}
