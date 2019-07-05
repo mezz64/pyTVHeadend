@@ -146,11 +146,14 @@ class TVHeadend(object):
             # _LOGGER.debug('RAW: %s', slist)
             # _LOGGER.debug('RAW: %s', slist['entries'])
             for chann in slist['entries']:
-                streams.append({
-                    'id': chann['id'],
-                    'name': chann['channel'].upper(),
-                    'network': chann['service'].split("/")[1].upper(),
-                    })
+                try:
+                    streams.append({
+                        'id': chann['id'],
+                        'name': chann['channel'].upper(),
+                        'network': chann['service'].split("/")[1].upper(),
+                        })
+                except KeyError as err:
+                    _LOGGER.debug('Error adding stream to list: %s', err)
 
         self._active_subscriptions = streams
         # _LOGGER.debug(streams)

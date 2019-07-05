@@ -16,12 +16,12 @@ from distutils.core import setup
 setup(
     name='pyTVHeadend',
     packages=['pytvheadend'],
-    version='0.0.1',
+    version='0.0.2',
     description='Provides a python api to interact with a TVHeadend server.',
     author='John Mihalic',
     author_email='mezz64@users.noreply.github.com',
     url='https://github.com/mezz64/pyTVHeadend',
-    download_url='https://github.com/mezz64/pytvheadend/tarball/0.0.1',
+    download_url='https://github.com/mezz64/pytvheadend/tarball/0.0.2',
     keywords=['tv', 'tvheadend', 'api wrapper', 'homeassistant'],
     classifiers=[],
     )
